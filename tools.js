@@ -30,15 +30,15 @@ function getPreDayArray(year,month){
 }
 // 当月视图后置天
 function getNextDayArray(year,month){
-    // 后置补充的天数
+   
     var preDays=new Date(year+"/"+month+"/01").getDay()
     
-   
-    var nextDays = 
+    // 后置补充的天数
+    var nextDays = 42-preDays-getMonthDays(year,month);
 
     var temp=[];
-    for(var i=0;i<preDays;i++){
-        temp.push(preMonthDays-i)
+    for(var i=1;i<preDays;i++){
+        temp.push(i);
     }
     return temp;
 }
@@ -46,7 +46,8 @@ function getNextDayArray(year,month){
 // 计算年视图的十年
 function getDecYears(year){
     var temp=year.replace(/\d$/,'0')-1,years=[]
-    for(i=1;i<=10;i++){
-
+    for(var i=1;i<=10;i++){
+        years.push(temp+i);  
     }
+    return years;
 }
