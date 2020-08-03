@@ -47,7 +47,7 @@ function getNextDayArray(year, month) {
 
 // 计算年视图的十年
 function getDecYears(year) {
-    var temp = year.replace(/\d$/, '0') - 1, years = [];
+    var temp = (year + "").replace(/\d$/, '0') - 1, years = [];
     for (var i = 1; i <= 10; i++) {
         years.push(temp + i);
     }
