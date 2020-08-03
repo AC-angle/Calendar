@@ -16,9 +16,9 @@ function selectYearView(targetEl, year, cYear) {
     // 头部分
     var template =
         '<div class="header">' +
-        '   <div class="left">前十年</div>' +
+        '   <div class="left" name="pre">前十年</div>' +
         '   <div class="title">' + decYears[0] + ' - ' + decYears[9] + '</div>' +
-        '   <div class="right">后十年</div>' +
+        '   <div class="right" name="next">后十年</div>' +
         '</div>';
 
     // 内容部分
@@ -29,6 +29,17 @@ function selectYearView(targetEl, year, cYear) {
     template += "</ul></div>";
 
     targetEl.innerHTML = template;
+
+    var preEl = document.getElementsByName('pre')[0];
+    var nextEl = document.getElementsByName('next')[0];
+
+    preEl.addEventListener('click', function () {
+        selectYearView(targetEl, year - 10, cYear)
+    }, false);
+
+    nextEl.addEventListener('click', function () {
+        selectYearView(targetEl, year + 10, cYear)
+    }, false);
 }
 
 /* <div>
