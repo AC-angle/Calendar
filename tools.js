@@ -15,39 +15,39 @@ function getMonthDays(year, month) {
 }
 
 // 当月视图前置天
-function getPreDayArray(year,month){
+function getPreDayArray(year, month) {
     // 前置补充的天数
-    var preDays=new Date(year+"/"+month+"/01").getDay()
-    
-    // 上个月多少天
-    var preMonthDays=month==1?getMonthDays(year-1,12):getMonthDays(year,month-1)
+    var preDays = new Date(year + "/" + month + "/01").getDay()
 
-    var temp=[];
-    for(var i=0;i<preDays;i++){
-        temp.push(preMonthDays-i)
+    // 上个月多少天
+    var preMonthDays = month == 1 ? getMonthDays(year - 1, 12) : getMonthDays(year, month - 1)
+
+    var temp = [];
+    for (var i = 0; i < preDays; i++) {
+        temp.push(preMonthDays - i);
     }
     return temp;
 }
 // 当月视图后置天
-function getNextDayArray(year,month){
-   
-    var preDays=new Date(year+"/"+month+"/01").getDay()
-    
-    // 后置补充的天数
-    var nextDays = 42-preDays-getMonthDays(year,month);
+function getNextDayArray(year, month) {
 
-    var temp=[];
-    for(var i=1;i<preDays;i++){
+    var preDays = new Date(year + "/" + month + "/01").getDay()
+
+    // 后置补充的天数
+    var nextDays = 42 - preDays - getMonthDays(year, month);
+
+    var temp = [];
+    for (var i = 1; i <=nextDays; i++) {
         temp.push(i);
     }
     return temp;
 }
 
 // 计算年视图的十年
-function getDecYears(year){
-    var temp=year.replace(/\d$/,'0')-1,years=[]
-    for(var i=1;i<=10;i++){
-        years.push(temp+i);  
+function getDecYears(year) {
+    var temp = (year+"").replace(/\d$/, '0') - 1, years = []
+    for (var i = 1; i <= 10; i++) {
+        years.push(temp + i);
     }
     return years;
 }
