@@ -7,14 +7,16 @@
     <title>年月日 | 日历组件</title>
 
     <!-- 样式文件 -->
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- 日历组件 -->
+    <script src="./calendar.js"></script>
 
     <!-- 工具方法 -->
     <script src="./tool.js"></script>
 
-    <!-- 日历组件 -->
-    <script src="./calendar.js"></script>
+    
 
 </head>
 
@@ -22,12 +24,12 @@
 
     <input type="text" id='root1'>
 
-    <input type="text" id='root2'>
+    <!-- <input type="text" id='root2'> -->
 
     <script>
 
         Calendar(document.getElementById('root1'));
-        Calendar(document.getElementById('root2'), '1949/10/01');
+        // Calendar(document.getElementById('root2'), '1949/10/01');
 
     </script>
 
