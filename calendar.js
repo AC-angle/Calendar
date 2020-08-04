@@ -52,7 +52,7 @@ function selectDayView(targetEl, year, month, cYear, cMonth, cDay) {
     }, false);
 
     nextEl.addEventListener('click', function () {
-        if (month == 12) { year += 1; month = 1; } else { month += 1; }
+        if (month == 12) { year += 1; month = 1; } else { month =  parseInt(month)+1; }
         selectDayView(targetEl, year, month, cYear, cMonth, cDay);
     }, false);
 
