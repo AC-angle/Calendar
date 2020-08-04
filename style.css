@@ -1,0 +1,48 @@
+
+/**
+----------------------------------------
+ 日历组件样式
+----------------------------------------
+*/
+
+.calendar-view{
+    width:210px;
+    user-select: none;
+    background-color: rgb(223, 217, 222);
+    line-height: 1.8em;
+    text-align: center;
+}
+
+/* 头部 */
+
+.calendar-view>.header>div{
+    display: inline-block;
+}
+.calendar-view>.header>div.title{
+    width:165px;
+}
+
+/* 内容 */
+.calendar-view>.container.day-view>ul>li{
+    width:29px;
+}
+.calendar-view>.container.month-view>ul>li{
+    width:52px;
+}
+.calendar-view>.container.year-view>ul>li{
+    width:52px;
+}
+
+.calendar-view>.container>ul>li{
+    display: inline-block;
+
+}
+.calendar-view>.container>ul>li.click{
+    cursor: pointer;
+}
+.calendar-view>.container>ul>li.none{
+    cursor: no-drop;
+}
+.calendar-view>.container>ul>li.gray{
+    color:gray;
+}
