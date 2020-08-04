@@ -24,7 +24,7 @@ function getPreDayArray(year, month) {
 
     var temp = [];
     for (var i = 0; i < preDays; i++) {
-        temp.push(preMonthDays - i);
+        temp.unshift(preMonthDays - i);
     }
     return temp;
 }

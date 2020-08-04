@@ -1,9 +1,6 @@
-.header{
+/* .header{
     display: inline-block;
     position: relative;
-    /* float: left;
-    width: 500px;
-    height: 500px; */
 }
 .left{
     display: inline-block;
@@ -27,4 +24,68 @@
 }
 .container>ul{
     margin-left: 17px;
+} 
+我写的*/
+
+/**
+----------------------------
+日历组件样式
+----------------------------
+*/
+.calendar-view{
+    width: 210px;
+    user-select: none;
+    background-color: rgb(223, 217, 222);
+    line-height: 1.8em;
+    text-align: center;
 }
+
+/* 头部 */
+.calendar-view>.header>div{
+    display: inline-block;
+}
+.calendar-view>.header>div.middle{
+    width: 120px;
+    vertical-align: super;
+}
+.img{
+    margin-right: 3px;  
+}
+
+/* 内容 */
+.calendar-view>.containter.day-view>ul>li{
+    width: 29px;
+}
+.calendar-view>.containter.month-view>ul>li{
+    width: 52px;
+}
+.calendar-view>.containter.year-view>ul>li{
+    width: 52px;
+}
+
+.calendar-view>.containter>ul>li{
+    display: inline-block;
+}
+.calendar-view>.containter>ul>li.click{
+    cursor: pointer;
+}
+.calendar-view>.containter>ul>li.none{
+    cursor: no-drop;
+}
+.calendar-view>.containter>ul>li.gray{
+    color: gray;
+}
+
+.calendar-view>.containter>ul>li.click.today{
+    background-color: rgb(251, 214, 2);
+}
+.calendar-view>.containter>ul>li.click.selected{
+    background-color: rgb(21, 199, 243);
+}
+
+.calendar-view>.containter>ul>li:hover{
+    background-color: rgb(185,233,245);
+}
+
+
+

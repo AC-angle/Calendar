@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +13,29 @@
 
     <!-- 工具方法 -->
     <script src="./tools.js"></script>
-    
+
     <!-- 日历组件 -->
     <script src="./calendar.js"></script>
 </head>
+
 <body>
 
-    <input type="text" id="root1">
+    
     <!-- <input type="text" id="root2"> -->
-
+    <!-- <div  id="click" onclick="checkout()">
+        <input type="text" id="root1">
+        <button >确认</button>
+    </div> -->
+    <input type="text" id="root1">
     <script>
 
         Calendar(document.getElementById("root1"));
         // Calendar(document.getElementById("root2"),'19980101');
-
+        // function checkout(){
+        //     document.getElementById('click').innerHTML='';
+        // }
     </script>
 
 </body>
+
 </html>
