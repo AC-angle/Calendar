@@ -1,3 +1,14 @@
+input {
+    line-height: 2em;
+    padding: 0 10px;
+    margin: 80px 0 0 80px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendar-view {
+    margin-left: 80px;
+}
 
 /**
 ----------------------------------------
@@ -5,54 +16,62 @@
 ----------------------------------------
 */
 
-.calendar-view{
-    width:210px;
+.calendar-view {
+    width: 210px;
     user-select: none;
-    background-color: rgb(223, 217, 222);
+    background-color: rgb(233 239 241);
     line-height: 1.8em;
     text-align: center;
+    box-shadow: 1px 2px 3px #79798d;
 }
 
 /* 头部 */
 
-.calendar-view>.header>div{
+.calendar-view>.header>div {
     display: inline-block;
+    cursor: pointer;
 }
-.calendar-view>.header>div.title{
-    width:165px;
+
+.calendar-view>.header>div.title {
+    width: 165px;
 }
 
 /* 内容 */
-.calendar-view>.container.day-view>ul>li{
-    width:29px;
-}
-.calendar-view>.container.month-view>ul>li{
-    width:52px;
-}
-.calendar-view>.container.year-view>ul>li{
-    width:52px;
+.calendar-view>.container.day-view>ul>li {
+    width: 29px;
 }
 
-.calendar-view>.container>ul>li{
+.calendar-view>.container.month-view>ul>li,
+.calendar-view>.container.year-view>ul>li {
+    width: 52px;
+    line-height: 2.4em;
+}
+
+.calendar-view>.container>ul>li {
     display: inline-block;
 
 }
-.calendar-view>.container>ul>li.click{
+
+.calendar-view>.container>ul>li.click {
     cursor: pointer;
 }
-.calendar-view>.container>ul>li.none{
+
+.calendar-view>.container>ul>li.none {
     cursor: no-drop;
 }
-.calendar-view>.container>ul>li.gray{
-    color:gray;
+
+.calendar-view>.container>ul>li.gray {
+    color: gray;
 }
-.calendar-view>.container>ul>li.click.today{
+
+.calendar-view>.container>ul>li.click.today {
     background-color: rgb(251, 214, 2);
 }
-.calendar-view>.container>ul>li.click.selected{
+
+.calendar-view>.container>ul>li.click.selected {
     background-color: rgb(21, 199, 243);
 }
 
-.calendar-view>.container>ul>li:hover{
+.calendar-view>.container>ul>li:hover {
     background-color: rgb(185, 233, 245);
 }

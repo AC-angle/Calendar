@@ -176,17 +176,6 @@ function selectYearView(el, targetEl, year, cYear, cMonth, cDay) {
     });
 }
 
-/* <div>
-    <div class="header">
-        <div class="left"></div>
-        <div class="title"></div>
-        <div class="right"></div>
-    </div>
-    <div class="container">
-        
-    </div>
-</div> */
-
 /**
  * 年月日日历控件
  * @param {element} el 挂载点，必输
