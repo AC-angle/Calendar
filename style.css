@@ -46,3 +46,13 @@
 .calendar-view>.container>ul>li.gray{
     color:gray;
 }
+.calendar-view>.container>ul>li.click.today{
+    background-color: rgb(251, 214, 2);
+}
+.calendar-view>.container>ul>li.click.selected{
+    background-color: rgb(21, 199, 243);
+}
+
+.calendar-view>.container>ul>li:hover{
+    background-color: rgb(185, 233, 245);
+}
