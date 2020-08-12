@@ -19,7 +19,7 @@ input {
 .calendar-view {
     width: 210px;
     user-select: none;
-    background-color: rgb(233 239 241);
+    background-color: rgb(233, 239 ,241);
     line-height: 1.8em;
     text-align: center;
     box-shadow: 1px 2px 3px #79798d;
